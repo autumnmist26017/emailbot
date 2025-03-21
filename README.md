@@ -18,3 +18,11 @@ This project consists of a Chrome extension and a Flask server to automate email
 Create a .env file in the root directory with your OpenAI API key:
    ```bash
    OPENAI_API_KEY=your_openai_api_key_here
+```
+
+### 4. Run Server
+   ```bash
+   python server/server.py
+
+
+
