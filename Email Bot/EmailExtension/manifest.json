@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Gmail Auto Responder",
+    "version": "1.0",
+    "description": "Helps you respond to emails on Gmail.",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://mail.google.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
